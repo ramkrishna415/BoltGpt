@@ -9,7 +9,7 @@ function Sidebar(){
 
   const getAllThreads =async ()=>{
         try{
-          const response = await fetch("http://localhost:8080/api/thread");
+          const response = await fetch("https://boltgpt.onrender.com/api/thread");
           const res = await response.json();
            const filterData = res.map(thread =>({threadId:thread.threadId,title:thread.title}));
             //console.log(res);
@@ -35,7 +35,7 @@ function Sidebar(){
  const changeThread = async (newthreadId)=>{
       setCurrThreadId(newthreadId);
       try{
-        const response = await fetch(`http://localhost:8080/api/thread/${newthreadId}`);
+        const response = await fetch(`https://boltgpt.onrender.com/api/thread/${newthreadId}`);
         const res = await response.json();
         console.log(res);
          setPrevChats(res);
@@ -48,7 +48,7 @@ function Sidebar(){
 
  const deleteThread =async (threadId)=>{
   try{
-      const response =await fetch(`http://localhost:8080/api/thread/${threadId}`,{method:"DELETE"});
+      const response =await fetch(`https://boltgpt.onrender.com/api/thread/${threadId}`,{method:"DELETE"});
        const res= await response.json();
        console.log(res);
        //updated thread re -render

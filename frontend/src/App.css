@@ -1,4 +1,4 @@
-*{
+/* *{
 color: #ececee;
 font-family: Roboto,'Open Sans','Helvetica Neue',sans-serif;
 
@@ -10,4 +10,29 @@ body{
 .main{
   background-color: #212121;
   display: flex;
+} */
+
+
+
+
+/* App.css */
+* {
+  color: #ececee;
+  font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box; /* Padding se layout kharab na ho iske liye */
+}
+
+html, body, #root, .main {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #212121;
+}
+
+/* Home Page ke liye ek alag class banayein jo Sidebar aur Chat ko side-by-side rakhe */
+.home-container {
+  display: flex; /* Flexbox wapas enable karne ke liye */
+  height: 100%;
+  width: 100%;
 }

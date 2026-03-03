@@ -6,7 +6,8 @@ import Sidebar from './Sidebar'
 import {myContext}from "./MyContext.jsx";
 import { useState } from 'react';
 import{v1 as uuidv1}from "uuid";
-import Loginpage from './loginpage.jsx';
+import Loginpage from './Loginpage.jsx';
+
 function App() {
   const [prompt,setPrompt]=useState("");
   const[reply,setReply]=useState(null);

@@ -11,3 +11,5 @@ backend/.env
 # Ignore build folders
 frontend/dist/
 frontend/build/
+
+   # Ignore

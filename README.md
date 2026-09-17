@@ -52,7 +52,7 @@ Data Validation: Ensures valid JSON format for all API requests and responses.
 This project demonstrates the integration of modern AI inference engines with the MERN stack. It highlights how to build scalable, real-time AI applications that prioritize speed and user experience through Groq's high-speed API.
 
 
-## Author
+### Author
 Name: Ramkrishna Upadhyay
 Course: B.Tech (CSE)
 Project Type: Personal Project 
